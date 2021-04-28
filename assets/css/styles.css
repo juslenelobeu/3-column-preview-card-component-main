@@ -37,11 +37,14 @@ body {
   
   display: flex;
   
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 10.75rem;
 }
 
 .card {
   color: white;
+
+  width: 310px;
 
   padding: 3rem;
 
@@ -67,12 +70,14 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
+  
+  margin-top: 0.5rem;
 }
 
 .card p {
   color: var(--transparent-white);
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
 }
 
 .card button {
@@ -80,16 +85,17 @@ body {
 
   max-width: 145px;
 
-  margin-top: 3rem;
-  padding: 1rem;
+  margin-top: 3.5rem;
+  padding: .8rem;
 
   border: none;
   border-radius: 50rem;
+  border: 2px solid var(--very-light-gray);
 
   font-size: 1rem;
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
-  font-size: .9rem;
+  font-size: .95rem;
 
   outline: none;
 }
@@ -98,7 +104,6 @@ body {
   background-color: transparent;
   color: var(--very-light-gray);
   cursor: pointer;
-  border: 2px solid var(--very-light-gray);
 }
 
 .card-sedans {
@@ -122,32 +127,43 @@ body {
   color: var(--very-dark-cyan);
 }
 
-@media (max-width: 767px) {
+/* atribuition */
+.attribution {
+  margin: 1rem 0;
+  font-size: 11px;
+  text-align: center;
+  display: block;
+}
+
+.attribution a {
+  color: #3e52a3;
+  text-decoration: none;
+}
+
+@media (min-width: 692px) and (max-width: 768px) {
+  .card-group {
+    max-width: 100%;
+  }
+  .card {
+    max-width: 310px;
+  }
+}
+
+@media (max-width: 691px) {
   .container {
     height: fit-content;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .card-group {
-    margin-top: 2rem;
+    margin: 5.5rem 0;
     flex-direction: column;
   }
 
   .card {
+    width: 100%;
     min-height: 440px;
-  }
-
-  .card h2 {
-    margin-top: 2rem;
-  }
-
-  .card p {
-    margin-top: 2rem;
-    font-size: 1rem;
-    line-height: 1.7rem;
-  }
-
-  .card button {
-    margin-top: 1.5rem;
   }
 
   .card:first-child {
@@ -159,13 +175,18 @@ body {
   }
 }
 
-/* atribuition */
-.attribution {
-  margin: 1rem 0;
-  font-size: 11px;
-  text-align: center;
-}
+@media (max-width: 425px) {
 
-.attribution a {
-  color: #3e52a3;
+  .card h2 {
+    margin-top: 2rem;
+  }
+
+  .card p {
+    margin-top: 2rem;
+  }
+
+  .card button {
+    margin-top: 1.5rem;
+  }
+
 }
