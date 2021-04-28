@@ -35,7 +35,7 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- Site: [Preview](https://juslenelobeu.github.io/3-column-preview-card-component/)
+- Site: [Preview](https://juslenelobeu.github.io/3-column-preview-card-component-main/)
 - Solução no Frontend Mentor: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsividade-aplicada-com-flexbox-e-media-queries-CzwFVmuvr)
 
 ## Meu processo
